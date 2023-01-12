@@ -26,7 +26,7 @@ const Hero = () => (
       </div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:mt-[20px] -mt-[12px]"
+        className="relative w-full md:-mt-[60px] -mt-[12px]"
       >
         <div className="absolute w-full her0-gradient rounded-tl-[140px] h-[300px] z-[0] -top-[30px]" />
         <img
