@@ -15,7 +15,7 @@ const Hero = () => (
     >
       <motion.div
         variants={slideIn("up", "tween", 0.2, 1)}
-        className="flex justify-end items-end flex-col p-1 gap-8 social"
+        className="flex justify-end items-end flex-col mr-[20px] gap-5 social"
       >
         {topSocials.map((social) => (
           <img
