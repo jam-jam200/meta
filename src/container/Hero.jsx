@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { slideIn, textVariant, staggerContainer } from '../utils/motion';
+import { motion } from "framer-motion";
+import styles from "../styles";
+import { TypingText } from "../components";
+import { slideIn, textVariant, staggerContainer } from "../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -9,12 +10,15 @@ const Hero = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} flex flex-col mx-auto`}
+      className={`${styles.innerWidth} flex flex-col mx-auto `}
     >
       <div className="flex justify-center flex-col z-10 items-center relative">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
-        </motion.h1>
+        <div className="flex">
+          <TypingText title="| Home" textStyles="text-start" />
+          <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+            Metaverse
+          </motion.h1>
+        </div>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
@@ -25,7 +29,7 @@ const Hero = () => (
         </motion.div>
       </div>
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[60px] -mt-[12px]"
       >
         <div className="absolute w-full her0-gradient rounded-tl-[140px] h-[300px] z-[0] -top-[30px]" />

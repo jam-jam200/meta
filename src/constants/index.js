@@ -86,3 +86,22 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+export const topSocials = [
+  {
+    name: 'reddit',
+    url: '/reddit.svg',
+  },
+  {
+    name: 'discord',
+    url: '/discord.svg',
+  },
+  {
+    name: 'twitter',
+    url: '/twitter.svg',
+  },
+  {
+    name: 'instagram',
+    url: '/instagram.svg',
+  },
+];
