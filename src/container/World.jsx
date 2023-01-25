@@ -39,14 +39,13 @@ const World = () => (
           <img src="/people-03.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[196px] h-[150px] p-[6px] rounded-full bg-[#5d6680]">
+        <div className="absolute top-1/4 left-[15%] w-[390px] card h-[320px] p-[6px] rounded-full">
           <img src="/card-01.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="/people-03.png" alt="people" className="w-full h-full" />
+        <div className="absolute card top-1/8 left-[55%] w-[453px] h-[368px] p-[6px] rounded-full">
+          <img src="/card-02.png" alt="people" className="w-full h-full" />
         </div>
-        
       </motion.div>
     </motion.div>
   </section>
