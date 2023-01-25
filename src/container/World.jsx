@@ -43,7 +43,7 @@ const World = () => (
           <img src="/card-01.png" alt="people" className="w-full h-full" />
         </div>
 
-        <div className="absolute card top-1/8 left-[55%] w-[453px] h-[368px] p-[6px] rounded-full">
+        <div className="absolute card -top-[10%] left-[55%] w-[453px] h-[368px] p-[6px] rounded-full">
           <img src="/card-02.png" alt="people" className="w-full h-full" />
         </div>
       </motion.div>
