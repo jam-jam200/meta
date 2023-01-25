@@ -107,7 +107,8 @@
 }
 
 @media screen and (max-width: 660px) {
-  .card {
+  .card,
+  .social {
     display: none;
   }
 }

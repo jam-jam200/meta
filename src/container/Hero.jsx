@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { TypingText } from "../components";
+import { topSocials } from "../constants";
 import { slideIn, textVariant, staggerContainer } from "../utils/motion";
 
 const Hero = () => (
@@ -12,13 +13,25 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} flex flex-col mx-auto `}
     >
+      <motion.div
+        variants={slideIn("up", "tween", 0.2, 1)}
+        className="flex justify-end items-end flex-col p-1 gap-8 social"
+      >
+        {topSocials.map((social) => (
+          <img
+            src={social.url}
+            key={social.name}
+            alt={social.name}
+            className="w-[27px] h-[27px] object-contain cursor-pointer"
+          />
+        ))}
+      </motion.div>
       <div className="flex justify-center flex-col z-10 items-center relative">
-        <div className="flex">
-          <TypingText title="| Home" textStyles="text-start" />
-          <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-            Metaverse
-          </motion.h1>
-        </div>
+        <TypingText title="| Home" textStyles="text-start" />
+        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+          Metaverse
+        </motion.h1>
+
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
