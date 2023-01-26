@@ -123,10 +123,17 @@
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
     border: none;
+    height: 35px;
+    margin-bottom: 2px;
   }
 
   .explore-div {
     padding: 0;
     padding-left: 10px !important;
+    padding-top: 5px !important;
+  }
+
+  .explore-div p {
+    font-size: 13px;
   }
 }
