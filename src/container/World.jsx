@@ -29,6 +29,8 @@ const World = () => (
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
         <motion.div
           variants={fadeIn("up", "spring", 0.3, 1)}
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 1.3 }}
           className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
         >
           <img src="/people-01.png" alt="people" className="w-full h-full" />
@@ -36,6 +38,8 @@ const World = () => (
 
         <motion.div
           variants={fadeIn("up", "spring", 0.3, 2)}
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 1.3 }}
           className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
         >
           <img src="/people-02.png" alt="people" className="w-full h-full" />
@@ -43,6 +47,8 @@ const World = () => (
 
         <motion.div
           variants={fadeIn("up", "spring", 0.3, 3)}
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 1.3 }}
           className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
         >
           <img src="/people-03.png" alt="people" className="w-full h-full" />
@@ -50,6 +56,7 @@ const World = () => (
 
         <motion.div
           variants={fadeIn("down", "spring", 0.3, 1.5)}
+          whileHover={{ scale: 1.1 }}
           className="absolute top-1/4 left-[15%] w-[390px] card h-[320px] p-[6px] rounded-full"
         >
           <img src="/card-01.png" alt="people" className="w-full h-full" />
@@ -57,7 +64,7 @@ const World = () => (
 
         <motion.div
           variants={fadeIn("down", "spring", 0.3, 2)}
-          whileHover=""
+          whileHover={{ scale: 1.1 }}
           className="absolute card -top-[10%] left-[55%] w-[453px] h-[368px] p-[6px] rounded-full"
         >
           <img src="/card-02.png" alt="people" className="w-full h-full" />
