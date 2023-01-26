@@ -27,25 +27,41 @@ const World = () => (
         className="relative mt-[68px] flex w-full h-[550px]"
       >
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
-        <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+        <motion.div
+          variants={fadeIn("up", "spring", 0.3, 1)}
+          className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
           <img src="/people-01.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+        <motion.div
+          variants={fadeIn("up", "spring", 0.3, 2)}
+          className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
           <img src="/people-02.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
+        <motion.div
+          variants={fadeIn("up", "spring", 0.3, 3)}
+          className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
+        >
           <img src="/people-03.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute top-1/4 left-[15%] w-[390px] card h-[320px] p-[6px] rounded-full">
+        <motion.div
+          variants={fadeIn("down", "spring", 0.3, 1.5)}
+          className="absolute top-1/4 left-[15%] w-[390px] card h-[320px] p-[6px] rounded-full"
+        >
           <img src="/card-01.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
 
-        <div className="absolute card -top-[10%] left-[55%] w-[453px] h-[368px] p-[6px] rounded-full">
+        <motion.div
+          variants={fadeIn("down", "spring", 0.3, 2)}
+          whileHover=""
+          className="absolute card -top-[10%] left-[55%] w-[453px] h-[368px] p-[6px] rounded-full"
+        >
           <img src="/card-02.png" alt="people" className="w-full h-full" />
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>
