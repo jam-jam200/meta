@@ -124,4 +124,9 @@
     -webkit-backdrop-filter: blur(0px);
     border: none;
   }
+
+  .explore-div {
+    padding: 0;
+    padding-left: 10px !important;
+  }
 }
