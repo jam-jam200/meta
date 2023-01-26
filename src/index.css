@@ -111,4 +111,8 @@
   .social {
     display: none;
   }
+  .black-shadow {
+    height: 100%;
+    border-radius: 24px;
+  }
 }
