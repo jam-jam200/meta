@@ -37,7 +37,7 @@ const World = () => (
         </motion.div>
 
         <motion.div
-          variants={fadeIn("up", "spring", 0.3, 2)}
+          variants={fadeIn("up", "tween", 0.3, 2)}
           whileHover={{ scale: 1.5 }}
           whileTap={{ scale: 1.3 }}
           className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]"
